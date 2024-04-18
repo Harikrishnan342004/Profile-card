@@ -35,14 +35,16 @@ body
     0 0 100px #4fc3dc;
     animation: animate 15s linear infinite;
     animation-duration: calc(125s/ var(--i) );
+    cursor:pointer ;
 
 }
+
 .bubble span:nth-child(even)
 {
 color: #ff2d75;
-/* box-shadow: 0 0 0 10px #ff2d7544,
+filter:drop-shadow(0 0 0 10px #ff2d7544,
 0 0 50px #ff2d75,
-0 0 100px #ff2d75; */
+0 0 100px #ff2d75);
 }
 @keyframes animate 
 {
