@@ -22,7 +22,7 @@ const Footer = () => {
           <button className="closeButton" onClick={closeDrawer}>Close</button>
           <div className="drawer">
             <h2>Drawer Content</h2>
-            <p>This is the content of the drawer.</p>
+            <p>Ths is the content of the drawer.</p>
           </div>
         </>
       )}
