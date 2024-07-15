@@ -1,29 +1,7 @@
-// import './App.css';
-// import BackgroundAnimation from './BackgroundAnimation';
-// import Footer from './Footer';
-// import DarkMode from './DarkMode/DarkMode';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <DarkMode></DarkMode>
-//       <BackgroundAnimation />
-      
-//       <img src="./profile.png" alt="" className='middle-image' />
-//       <Footer></Footer>
-      
-
-      
-      
-//     </div>
-//   );
-// }
-
-// export default App;
 import './App.css';
 import BackgroundAnimation from './BackgroundAnimation';
-import Footer from './Footer';
 import DarkMode from './DarkMode/DarkMode';
+import Drawer from './Drawer/Drawer'
 
 function App() {
   return (
@@ -35,7 +13,7 @@ function App() {
         alt="" 
         className='middle-image' 
       />
-      <Footer />
+      <Drawer />
     </div>
   );
 }
