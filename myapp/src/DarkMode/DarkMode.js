@@ -29,6 +29,8 @@ const DarkMode = () => {
         } else {
             setLightMode();
         }
+    // Reload the page after setting the theme
+        window.location.reload();
     };
 
     return (

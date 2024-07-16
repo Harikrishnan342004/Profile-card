@@ -42,12 +42,13 @@
   }
   .icons
   {
-    color: #fff;
+    color: #ff2d75;
     margin: 50px;
     font-size: large;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    
     
   }
   @media only screen and (max-width: 600px) {

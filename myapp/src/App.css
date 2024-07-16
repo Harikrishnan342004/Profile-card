@@ -31,6 +31,18 @@
   transform: translate(-50%, -50%);
 }
 
+.middle-name
+{
+ 
+  font-family: "roboto";
+  border-radius: 50%;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
 
 /* styles.css */
 
