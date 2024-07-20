@@ -1,0 +1,84 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#0c192c ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: starAnimation 50s linear infinite;
+}
+
+.meteorite {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 50px;
+    height: 50px;
+    background: url('https://example.com/meteorite.png') no-repeat center center / contain;
+    animation: meteoriteAnimation 5s linear infinite;
+}
+
+.big-meteorite {
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: url('https://example.com/big-meteorite.png') no-repeat center center / contain;
+    animation: bigMeteoriteAnimation 5s linear infinite;
+}
+
+@keyframes starAnimation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+@keyframes meteoriteAnimation {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate(100vw, 100vh) rotate(360deg);
+    }
+}
+
+@keyframes bigMeteoriteAnimation {
+    0% {
+        transform: translate(-50%, 100vh) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -100vh) rotate(360deg);
+    }
+}
+
+.preloader-inner {
+    text-align: center;
+    z-index: 10;
+}
+
+.rotating-preloader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-top: 5px solid white;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

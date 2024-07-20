@@ -44,7 +44,7 @@ body
 color: #ff2d75;
 filter:drop-shadow(0 0 0 10px #ff2d7544,
 0 0 50px #ff2d75,
-0 0 100px #ff2d75);
+0 0 100px hsl(339, 100%, 59%));
 }
 @keyframes animate 
 {
