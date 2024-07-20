@@ -58,7 +58,18 @@
 .background-animation {
   position: relative;
   height: 100vh; /* Set a specific height */
+  width: 100%;
   overflow: hidden;
+}
+@media (max-width: 480px)
+{
+  .background-animation {
+    position: relative;
+    height: 100vh; /* Set a specific height */
+    width: 100%;
+    overflow: hidden;
+  }
+
 }
 
 .float-text {

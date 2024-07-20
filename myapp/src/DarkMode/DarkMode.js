@@ -29,7 +29,7 @@ const DarkMode = () => {
         } else {
             setLightMode();
         }
-    // Reload the page after setting the theme
+        // Reload the page after setting the theme
         window.location.reload();
     };
 
@@ -43,11 +43,14 @@ const DarkMode = () => {
                 defaultChecked={localStorage.getItem("selectedTheme") === "dark"}
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
-                <Sun />
-                <Moon />
+                <Sun className='sun' />
+                <Moon className='moon' />
             </label>
         </div>
     );
 };
 
 export default DarkMode;
+
+
+
